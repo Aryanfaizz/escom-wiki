@@ -1,0 +1,29 @@
+{
+  "name": "transect-wiki-project",
+  "version": "1.0.0",
+  "description": "Transect wiki, general project, here you can initialize and start both frontend and backend",
+  "scripts": {
+    "setup": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "initdb": "cd backend && npm run initdb",
+    "backend": "cd backend && npm start",
+    "frontend": "cd frontend && npm start",
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "test": "cd backend && npm test && cd ../frontend && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.cs.dal.ca:courses/csci-x691/transect-project-wiki.git"
+  },
+  "keywords": [],
+  "author": "CSCI2691/3691/4691 Winter 2025 Transect-project-wiki",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.1.2",
+    "framer-motion": "^12.5.0",
+    "react-material-ui-carousel": "^3.4.2"
+  },
+  "engines": {
+    "npm": ">=10.9.2",
+    "node": ">=22.14.0"
+  }
+}

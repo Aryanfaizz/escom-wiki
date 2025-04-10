@@ -1,0 +1,13 @@
+#Author: Ahasan Karim
+
+/node_modules
+/build
+/dist
+.env
+*.log
+.DS_Store
+Thumbs.db
+.vscode
+.idea
+.cache
+

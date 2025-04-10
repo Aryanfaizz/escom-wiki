@@ -1,0 +1,190 @@
+/*Initial Author: Luis Cabarique - 12-2-2025*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	background-color: #063639;
+	font-family: "Open Sans", sans-serif;
+}
+
+.main-box {
+	display: flex;
+	width: 100vh;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+
+.grid-column {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.logo-col {
+	background-color: #ffffff;
+}
+
+.data-col {
+	background-color: #004AAD;
+	padding: 40px;
+	overflow-y: auto;
+}
+
+.logo {
+	max-width: 95%;
+}
+
+.data-form {
+	width: 100%;
+	max-width: 600px;
+	text-align: center;
+}
+
+.main-title {
+	color: white;
+	font-weight: bold;
+	margin-bottom: 40px;
+	font-size: 28px;
+}
+
+.input-field .MuiOutlinedInput-root {
+	min-width: 200px;
+	background-color: white;
+	transition: 0.3s;
+	margin-top: 20px !important;
+	border-radius: 0px;
+	&.Mui-focused fieldset {
+		border-color: #f78c34;
+	}
+}
+
+.input-field .MuiOutlinedInput-root:hover {
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.box-multi-objects {
+	justify-content: space-between;
+}
+
+.input-field-half {
+	width: 49%;
+	align-items: center;
+}
+
+.input-field-half > * {
+	width: 100%;
+}
+
+.form-btn {
+	width: 100%;
+	margin-top: 20px !important;
+	background-color: #021227 !important;
+	color: white;
+	padding: 15px !important;
+	font-size: 16px;
+	border-radius: 0px;
+	transition: all 0.3s ease-in-out;
+}
+
+.form-btn:hover {
+	background-color: #e7782f;
+	box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Style for the Sign In link */
+.signin-link {
+	margin-top: 20px !important;
+	text-align: center;
+	cursor: pointer;
+	font-size: 16px;
+	color: #ffffff;
+	transition: color 0.3s ease;
+  }
+  
+  .signin-text {
+	font-weight: bold;
+	color: #ffffff;
+	transition: color 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .signin-link:hover .signin-text {
+	color: #00aeff;
+  }
+  
+
+/* Dinamic for Smaller Screens */
+@media (max-width: 899px) {
+
+	.main-box {
+		flex-direction: column;
+		min-height: 100vh;
+	}
+
+	.logo-col {
+		width: 100vh;
+		height: 40%;
+		padding: 20px;
+		justify-content: center;
+	}
+
+	.data-col {
+		width: 100vh;
+		height: 60%;
+		padding: 20px;
+		overflow-y: auto;
+	}
+
+	.logo {
+		width: 70%;
+	}
+
+}
+
+.security-question-dropdown {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start; /* Aligns items to the left */
+	width: 100%; /* Ensures full width container */
+	 /* Adjust based on your design */
+  }
+  
+  .input-field {
+	width: 100%; /* Ensures full width within the container */
+	margin-bottom: 16px; /* Adds spacing between fields */
+	position: relative;
+  }
+
+  #security-question-label{
+	margin-bottom: -20px !important;
+  }
+
+  /* #security-question-select{
+	color: white;
+	margin-top: -2px;
+  } */
+   #security-question-label-1{
+	margin-top: 20px;
+   }
+
+   /* #security-question-label-2{
+	position: absolute;
+   }    */
+
+   .menu-item {
+	text-align: left; /* Aligns dropdown options */
+	justify-content: flex-start; /* Ensures text starts from the left */
+  }
+  
+  .security-dropdown {
+	text-align: left; /* Aligns selected value */
+  }
+
+  

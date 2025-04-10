@@ -1,0 +1,170 @@
+/* EditorPage.css */
+.editor-container {
+    display: flex;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+  }
+  
+  .editor-content {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 240px;
+    margin-top: 64px;
+  }
+  
+  .editor-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .editor-box:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .editor-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .editor-placeholder {
+    color: #888;
+    font-size: 16px;
+    font-style: italic;
+  }
+  
+  .editor-input {
+    min-height: 300px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background: white;
+    font-size: 16px;
+    line-height: 1.6;
+    transition: border-color 0.3s ease;
+  }
+  
+  .editor-input:focus {
+    border-color: #f1f1f1;
+    outline: none;
+  }
+  
+  .editor-toolbar {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .toolbar-button {
+    min-width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .toolbar-button:hover {
+    background-color: #f78c34;
+    color: white;
+    transform: scale(1.1);
+  }
+  
+  .file-upload {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .file-upload-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 8px 12px;
+    background: #f78c34;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .file-upload-label:hover {
+    background-color: #25221f;
+  }
+  
+  .upload-icon {
+    font-size: 20px;
+  }
+  
+  .upload-text {
+    font-size: 14px;
+  }
+  
+  .file-name {
+    font-size: 14px;
+    color: #666;
+    margin-left: 10px;
+  }
+  
+  .editor-save-btn {
+    background-color: #f78c34;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+
+  .editor-placeholder {
+    color: #aaa;
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  .editor-input {
+    background: #fff;
+    border-radius: 8px;
+    min-height: 400px;
+    padding: 15px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .editor-save-btn:hover {
+    background-color: #e7782f;
+    transform: translateY(-2px);
+  }
+
+  /* Voice recording button animation */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  .toolbar-button.listening {
+    animation: pulse 1s infinite;
+  }
+  
+  /* Dropdown menu styling */
+  .MuiMenu-paper {
+    border-radius: 8px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  }
+  
+  .MuiMenuItem-root {
+    font-size: 14px !important;
+    padding: 8px 16px !important;
+  }
