@@ -1,0 +1,8 @@
+#Author Luis Cabarique - B00882627
+#Ignore backend development build project
+
+#Node.js Dependencies
+/node_modules
+
+#Node.js Production
+/build

@@ -1,0 +1,49 @@
+{
+  "name": "transect-wiki-frontend",
+  "version": "1.0.0",
+  "description": "Transect Frontend, using react to server clients, required backend to be up",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "keywords": [],
+  "author": "CSCI2691/3691/4691 Winter 2025 Transect-project-wiki",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@lexical/headless": "^0.24.0",
+    "@lexical/link": "^0.24.0",
+    "@lexical/list": "^0.24.0",
+    "@lexical/react": "^0.24.0",
+    "@lexical/rich-text": "^0.24.0",
+    "@mui/icons-material": "^6.4.4",
+    "@mui/material": "^6.4.4",
+    "@mui/x-tree-view": "^7.26.0",
+    "axios": "^1.7.9",
+    "crypto": "^1.0.1",
+    "framer-motion": "^12.5.0",
+    "html-react-parser": "^5.2.2",
+    "lexical": "^0.24.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.5",
+    "react-scripts": "^5.0.1",
+    "universal-cookie": "^8.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
